@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="200" viewBox="0 0 700 200">
+  <defs>
+    <style>
+      .font-base { font-family: 'Segoe UI', system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="200" fill="#0d1117" rx="8"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle" class="font-base" font-size="11" fill="#8b949e" letter-spacing="0.08em">KNOWLEDGE DISTILLATION — MODEL COMPARISON</text>
+
+  <!-- ═══ LEFT CARD: Teacher (purple) ═══ -->
+  <rect x="12" y="36" width="280" height="152" rx="10" fill="#1a0f2e" stroke="#6f42c1" stroke-width="2"/>
+  <!-- Teacher header bar -->
+  <rect x="12" y="36" width="280" height="34" rx="10" fill="#6f42c1" opacity="0.4"/>
+  <rect x="12" y="56" width="280" height="14" fill="#6f42c1" opacity="0.4"/>
+  <text x="152" y="59" text-anchor="middle" class="font-base" font-size="12" font-weight="700" fill="#f0f6fc" letter-spacing="0.04em">TEACHER MODEL</text>
+
+  <!-- Teacher rows — each row 28px -->
+  <!-- Model name -->
+  <text x="32" y="90" class="font-base" font-size="11" fill="#8b949e">Model</text>
+  <text x="268" y="90" text-anchor="end" class="font-base" font-size="12" font-weight="700" fill="#bf91f9">gemma-4-E4B-it</text>
+
+  <!-- Params -->
+  <text x="32" y="116" class="font-base" font-size="11" fill="#8b949e">Parameters</text>
+  <rect x="198" y="101" width="74" height="20" rx="5" fill="#6f42c1" opacity="0.3"/>
+  <text x="235" y="115" text-anchor="middle" class="font-base" font-size="11" font-weight="700" fill="#bf91f9">4B params</text>
+
+  <!-- Precision -->
+  <text x="32" y="142" class="font-base" font-size="11" fill="#8b949e">Precision</text>
+  <text x="268" y="142" text-anchor="end" class="font-base" font-size="11" fill="#f0f6fc">bfloat16</text>
+
+  <!-- Role -->
+  <text x="32" y="168" class="font-base" font-size="11" fill="#8b949e">Role</text>
+  <rect x="98" y="153" width="174" height="20" rx="5" fill="#0f2b1a"/>
+  <text x="185" y="167" text-anchor="middle" class="font-base" font-size="10" font-weight="600" fill="#3fb950">GSM8K CoT Generator</text>
+
+  <!-- ═══ MIDDLE ARROW ═══ -->
+  <!-- Arrow body -->
+  <rect x="302" y="93" width="96" height="3" rx="2" fill="#6f42c1"/>
+  <!-- Arrow head -->
+  <polygon points="398,88 412,95 398,102" fill="#6f42c1"/>
+  <!-- KL label above -->
+  <text x="352" y="88" text-anchor="middle" class="font-base" font-size="10" font-weight="700" fill="#bf91f9">KL Divergence</text>
+  <!-- Loss label below -->
+  <text x="352" y="112" text-anchor="middle" class="font-base" font-size="10" fill="#8b949e">Loss</text>
+
+  <!-- ═══ RIGHT CARD: Student (green) ═══ -->
+  <rect x="408" y="36" width="280" height="152" rx="10" fill="#0a1f0a" stroke="#238636" stroke-width="2"/>
+  <!-- Student header bar -->
+  <rect x="408" y="36" width="280" height="34" rx="10" fill="#238636" opacity="0.4"/>
+  <rect x="408" y="56" width="280" height="14" fill="#238636" opacity="0.4"/>
+  <text x="548" y="59" text-anchor="middle" class="font-base" font-size="12" font-weight="700" fill="#f0f6fc" letter-spacing="0.04em">STUDENT MODEL</text>
+
+  <!-- Student rows -->
+  <!-- Model name -->
+  <text x="428" y="90" class="font-base" font-size="11" fill="#8b949e">Model</text>
+  <text x="664" y="90" text-anchor="end" class="font-base" font-size="12" font-weight="700" fill="#3fb950">gemma-4-E2B-it</text>
+
+  <!-- Params -->
+  <text x="428" y="116" class="font-base" font-size="11" fill="#8b949e">Parameters</text>
+  <rect x="590" y="101" width="74" height="20" rx="5" fill="#238636" opacity="0.3"/>
+  <text x="627" y="115" text-anchor="middle" class="font-base" font-size="11" font-weight="700" fill="#3fb950">2B params</text>
+
+  <!-- Quant -->
+  <text x="428" y="142" class="font-base" font-size="11" fill="#8b949e">Quantization</text>
+  <text x="664" y="142" text-anchor="end" class="font-base" font-size="11" fill="#f0f6fc">4-bit NF4 + LoRA</text>
+
+  <!-- Role -->
+  <text x="428" y="168" class="font-base" font-size="11" fill="#8b949e">Role</text>
+  <rect x="496" y="153" width="168" height="20" rx="5" fill="#1a0f2e"/>
+  <text x="580" y="167" text-anchor="middle" class="font-base" font-size="10" font-weight="600" fill="#bf91f9">Learning from Teacher</text>
+</svg>

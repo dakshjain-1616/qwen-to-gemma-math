@@ -9,6 +9,8 @@
 
 ## 🔄 Training in Progress
 
+<img src="assets/training_status.svg" alt="Distillation Training Status" width="100%">
+
 > **Notice:** This distillation run is currently active. All architecture and configuration details below are final. The Results section will be updated automatically once training completes.
 
 | Field | Status |
@@ -49,6 +51,10 @@ The combined loss function aligns the student both to the teacher's output **dis
 <img src="assets/distillation_pipeline.svg" alt="Distillation Pipeline" width="100%">
 
 ```
+
+### Model Comparison
+
+<img src="assets/model_comparison.svg" alt="Teacher vs Student Model Comparison" width="100%">
 
 ### Loss Function Detail
 
