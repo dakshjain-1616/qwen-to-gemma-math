@@ -1,3 +1,38 @@
+---
+language:
+- en
+license: apache-2.0
+tags:
+- distillation
+- knowledge-distillation
+- chain-of-thought
+- math
+- gsm8k
+- gemma
+- text-generation
+datasets:
+- openai/gsm8k
+base_model:
+- google/gemma-4-E2B-it
+pipeline_tag: text-generation
+model-index:
+- name: qwen-to-gemma-math
+  results:
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: GSM8K
+      type: openai/gsm8k
+    metrics:
+    - type: accuracy
+      value: 0.10
+      name: GSM8K Accuracy (strict match)
+    - type: bleu
+      value: 0.329
+      name: Average BLEU vs teacher traces
+---
+
 # qwen-to-gemma-math — GSM8K Distillation via Chain-of-Thought
 
 [![Built with NEO](https://img.shields.io/badge/Built%20with-NEO%20AI%20Agent-6f42c1?style=for-the-badge)](https://heyneo.so)
